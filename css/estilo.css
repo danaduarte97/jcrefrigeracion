@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
+
+@font-face {
+    font-family: "Roboto", sans-serif;
+    src: url(../fonts/LICENSE.txt);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*franja superior*/
+
+.franja {
+    background-color: #89a5b3;
+    color: white;
+    padding: 2px;
+    text-align: center;
+    position: fixed;
+    /* Fija la franja en la parte superior */
+    width: 100%;
+    height: 27px;
+    /* Ocupa todo el ancho de la pantalla */
+    top: 0;
+    /* Asegura que está en la parte superior */
+    z-index: 1000;
+    /* Asegura que está por encima de otros elementos */
+    font-family: "Roboto", sans-serif;
+    content: 1784;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto" sans-serif;
+    background-image: url(../img/patron1.png);
+    width: 100%;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.logojc a img {
+    width: 110px;
+    display: block;
+    margin-left: 80px;
+
+}
+
+.titulo-principal h1 {
+    color: #104355;
+    font-size: 15px;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.titulo-principal a {
+    text-decoration: none;
+}
+
+/*Navegacion*/
+.nav {
+    margin-left: auto;
+
+}
+
+.nav li a:hover {
+    color: black;
+
+}
+
+.nav li {
+    display: inline-block;
+    /* Alinea los elementos de la lista horizontalmente */
+}
+
+.nav li a {
+    color: #3c5e6a;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 7px;
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+    color: #44798c;
+    text-align: center;
+}
+
+/*Dentro de servicios/consejos/ubicaciones/contacto*/
+.img-portada {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.img-portada h2 {
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.img-portada-img {
+    width: 700px;
+    height: 120px;
+    opacity: .4;
+}
+
+.img-portada-img:hover {
+    opacity: 1;
+}
+
+.img-portada-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 30px;
+    text-decoration: none;
+
+}
+
+/* ------------------Index------------------*/
+
+/*banner del inicio*/
+.banner {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+.imagen-muestras-contenedor {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    cursor: zoom-in;
+}
+
+.imagen-muestras {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imagen-muestras-item img {
+    border: 1px solid #ffffff;
+    width: 330px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.imagen-muestras-item:hover {
+    transform: scale(1.5);
+}
+
+.elegirnos-titulo {
+    width: 100%;
+    color: #44798c;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: overline;
+}
+
+.imagen-elegirnos-contenedor {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.imagen-elegirnos {
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.imagen-elegirnos-items {
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.imagen-elegirnos-items img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.imagen-elegirnos-items h3 {
+    margin: 0;
+
+}
+
+.marcas img,
+h4 {
+    width: 100%;
+    color: #44798c;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: overline;
+}
+
+/* ------------- Consejos ------------- */
+.ahorrar img {
+    width: 100px;
+}
+
+/* ------------- Servicios ------------- */
+.tamano-acordion {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.tamano-acordion-titulo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fd850d;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-body a {
+    font-size: 25px;
+    background-color: #44798c;
+}
+
+.card-text {
+    flex-grow: 1;
+    line-height: 1.8;
+}
+
+
+
+
+
+
+
+
+/* ------------- Contacto ------------- */
+.formulario-contenedor {
+    background-color: white;
+    margin: 100px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    
+}
+
+.formulario-contenedor form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contenedor label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario-contenedor input,
+textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.boton {
+    padding: 10px;
+    background-color: #fd850d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton:hover {
+    background-color: #febd17;
+}
+
+.contacto-formulario {  
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-rows: 0.3fr 1.6fr 1.1fr;
+    gap: 0px 17px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "formulario ."
+    "formulario datos"
+    "formulario ."; }
+  
+  .formulario { grid-area: formulario; }
+  
+  .datos { 
+    grid-area: datos; 
+}
+
+.datos {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .contact-title {
+    font-weight: bold;
+    color: #5ea4c7; 
+    margin-bottom: 5px;
+  }
+  
+  .contact-phone {
+    color: #1a1a6d; 
+    margin-bottom: 20px;
+  }
+  
+  .contact-email {
+    color: #1a1a6d; 
+    text-decoration: none;
+  }
+  
+  .contact-email:hover {
+    text-decoration: underline;
+  }
+
+/* ------------- Ubicacion ------------- */
+
+.tamano-ubicacion iframe{
+    width: 100vw;
+}
+.tamano-ubicacion-texto{
+    font-size:1.8rem ;
+}
+
+
+/* ------------- Footer -------------  */
+.footer {
+    background-color: rgb(199, 194, 194);
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.footer-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.6fr 0.2fr;
+    gap: 0px 18px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "mpago contacto nav-footer"
+        "derechos derechos derechos";
+
+    background-color: #e2dfdf;
+    align-items: center;
+}
+
+.mpago {
+    grid-area: mpago;
+}
+
+.mpago {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mpago img {
+    width: 300px;
+}
+
+.contacto {
+    grid-area: contacto;
+}
+
+.contacto h5 {
+    font-size: 1rem;
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.nav-footer {
+    grid-area: nav-footer;
+}
+
+.nav-footer li {
+    list-style-type: none;
+}
+
+.nav-footer a {
+    color: #3c5e6a;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    margin: 0 auto;
+    font-weight: bold;
+    display: flex;
+    justify-content: center
+}
+
+.nav-footer a:hover {
+    color: black;
+}
+
+.derechos {
+    grid-area: derechos;
+}
+
+.derechos h6 {
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    font-size: 0.9rem;
+}
