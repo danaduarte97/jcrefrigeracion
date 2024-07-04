@@ -22,7 +22,7 @@
     text-align: center;
     position: fixed;
     /* Fija la franja en la parte superior */
-    width: 100%;
+    width: 100vw;
     height: 27px;
     /* Ocupa todo el ancho de la pantalla */
     top: 0;
@@ -291,7 +291,7 @@ h4 {
     width: 100%;
     max-width: 600px;
     box-sizing: border-box;
-    
+
 }
 
 .formulario-contenedor form {
@@ -327,21 +327,24 @@ textarea {
     background-color: #febd17;
 }
 
-.contacto-formulario {  
+.contacto-formulario {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
     grid-template-rows: 0.3fr 1.6fr 1.1fr;
     gap: 0px 17px;
     grid-auto-flow: row;
     grid-template-areas:
-    "formulario ."
-    "formulario datos"
-    "formulario ."; }
-  
-  .formulario { grid-area: formulario; }
-  
-  .datos { 
-    grid-area: datos; 
+        "formulario ."
+        "formulario datos"
+        "formulario .";
+}
+
+.formulario {
+    grid-area: formulario;
+}
+
+.datos {
+    grid-area: datos;
 }
 
 .datos {
@@ -351,35 +354,36 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #f9f9f9;
-  }
-  
-  .contact-title {
+}
+
+.contact-title {
     font-weight: bold;
-    color: #5ea4c7; 
+    color: #5ea4c7;
     margin-bottom: 5px;
-  }
-  
-  .contact-phone {
-    color: #1a1a6d; 
+}
+
+.contact-phone {
+    color: #1a1a6d;
     margin-bottom: 20px;
-  }
-  
-  .contact-email {
-    color: #1a1a6d; 
+}
+
+.contact-email {
+    color: #1a1a6d;
     text-decoration: none;
-  }
-  
-  .contact-email:hover {
+}
+
+.contact-email:hover {
     text-decoration: underline;
-  }
+}
 
 /* ------------- Ubicacion ------------- */
 
-.tamano-ubicacion iframe{
+.tamano-ubicacion iframe {
     width: 100vw;
 }
-.tamano-ubicacion-texto{
-    font-size:1.8rem ;
+
+.tamano-ubicacion-texto {
+    font-size: 1.8rem;
 }
 
 
@@ -466,4 +470,16 @@ footer {
     font-style: normal;
     text-align: center;
     font-size: 0.9rem;
+    
+}
+
+@media screen and (min-width:501px) and (max-width:960px) {
+    .imagen-muestras {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+    
+@media screen and (max-width:500px){
+    
 }
