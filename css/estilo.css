@@ -231,9 +231,11 @@ h4 {
 }
 
 /* ------------- Consejos ------------- */
-.ahorrar img {
-    width: 100px;
-}
+
+
+
+
+
 
 /* ------------- Servicios ------------- */
 .tamano-acordion {
@@ -473,13 +475,93 @@ footer {
     
 }
 
-@media screen and (min-width:501px) and (max-width:960px) {
+@media screen and (min-width:481px) and (max-width:768px) {
+   
+   /*INDEX*/
     .imagen-muestras {
         flex-wrap: wrap;
         justify-content: center;
     }
-}
+
+    .imagen-elegirnos-items {
+        padding: 0px;
+    }
     
-@media screen and (max-width:500px){
+    .imagen-elegirnos-items img {
+        max-width: 80px;
+        margin-bottom: 10px;
+    }
+    
+    .imagen-elegirnos-items h3 {
+        margin: 0;
+        font-size: 20px;
+    
+    }
+
+    .marcas h4 {
+        font-size: 20px;
+    }
+
+     /*footer*/
+    .footer-contenedor {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1.2fr 1.4fr 0.3fr;
+        gap: 0px 0px;
+    
+        grid-template-areas:
+            "mpago contacto contacto"
+            "nav-footer nav-footer nav-footer"
+            "derechos derechos derechos";
+    }
+    .mpago img {
+        width: 250px;
+}
+}
+
+@media screen and (max-width:480px){
+
+
+
+
+/*INDEX*/
+.elegirnos-titulo {
+    font-size: 19px;
+}
+.imagen-elegirnos-items {
+    margin: 1px;
+    padding: 3px;
+}
+.imagen-elegirnos-items img {
+    max-width: 40px;
+    margin-bottom: 2px;
+}
+
+.imagen-elegirnos-items h3 {
+    margin: 0;
+    font-size: 9px;
+
+}
+
+.marcas h4 {
+    font-size: 18px;
+}
+     /*footer*/
+     .footer-contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.9fr 0.2fr;
+        gap: 0px 0px;
+    
+        grid-template-areas:
+            "mpago"
+            "contacto"
+            "nav-footer"
+            "derechos";
+    }
+    .mpago img {
+        width: 150px;
+}
+    footer {
+        padding: 0px;
+    }
     
 }
