@@ -15,7 +15,7 @@
 
 /*franja superior*/
 
-.franja {
+.franja  p{
     background-color: #89a5b3;
     color: white;
     padding: 2px;
@@ -41,12 +41,9 @@ body {
 }
 
 .logo-nav {
-    display: flex;
-    align-items: center;
-    padding: 5px 10px;
     background-color: #fff;
     border-bottom: 1px solid #ccc;
-    margin-top: 20px;
+    margin-top: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
@@ -54,7 +51,7 @@ body {
 .logojc a img {
     width: 110px;
     display: block;
-    margin-left: 80px;
+    margin-left: 90px;
 
 }
 
@@ -75,7 +72,7 @@ body {
 /*Navegacion*/
 .nav {
     margin-left: auto;
-
+    justify-content: flex-end;
 }
 
 .nav li a:hover {
@@ -83,18 +80,12 @@ body {
 
 }
 
-.nav li {
-    display: inline-block;
-    /* Alinea los elementos de la lista horizontalmente */
-}
-
 .nav li a {
     color: #3c5e6a;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
-    margin: 7px;
-    padding: 5px;
+    
     font-family: "Roboto", sans-serif;
 }
 
@@ -475,7 +466,39 @@ footer {
     
 }
 
-@media screen and (min-width:481px) and (max-width:768px) {
+@media screen and (min-width:660px) and (max-width:992px) {
+/* nav */
+    .logojc, .titulo-principal {
+        display: flex;
+        
+    }
+    .navbar-brand.logojc img {
+        margin-left: 30px;
+        
+    }
+    .navbar-brand.logojc {
+        margin-right: 5px;
+    }
+
+    .titulo-principal {
+        flex: 2;
+    }
+/*ubica los links debajo y uno al lado del otro*/
+  .nav {
+        flex-wrap: wrap; 
+    }
+
+    .navbar-nav {
+        flex-direction: row; 
+    }
+
+    .nav-item {
+        margin-right: 10px; 
+    }
+
+    .nav-link {
+        padding: 5px 10px; 
+    } 
    
    /*INDEX*/
     .imagen-muestras {
@@ -499,7 +522,7 @@ footer {
     }
 
     .marcas h4 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
      /*footer*/
@@ -518,9 +541,7 @@ footer {
 }
 }
 
-@media screen and (max-width:480px){
-
-
+@media screen and (max-width:659px){
 
 
 /*INDEX*/
@@ -564,4 +585,8 @@ footer {
         padding: 0px;
     }
     
+}
+
+@media screen and (max-width:480px) {
+
 }
