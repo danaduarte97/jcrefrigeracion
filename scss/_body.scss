@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
+
+@font-face {
+    font-family: "Roboto", sans-serif;
+    src: url(../fonts/LICENSE.txt);
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto" sans-serif;
+    background-image: url(../img/patron1.png);
+    width: 100%;
+}

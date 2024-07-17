@@ -1,0 +1,79 @@
+.footer-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.6fr 0.2fr;
+    gap: 0px 18px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "mpago contacto nav-footer"
+        "derechos derechos derechos";
+
+
+    align-items: center;
+    background-color: rgb(199, 194, 194);
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+
+
+    .mpago {
+        grid-area: mpago;
+        display: flex;
+        justify-content: space-evenly;
+
+        img {
+            width: 300px;
+        }
+    }
+
+    .contacto {
+        grid-area: contacto;
+
+        h5 {
+            font-size: 1rem;
+            font-family: "Arsenal SC", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+        }
+    }
+
+    .nav-footer {
+        grid-area: nav-footer;
+
+        ul {
+            li {
+                list-style-type: none;
+
+                a {
+                    color: #3c5e6a;
+                    font-family: "Roboto", sans-serif;
+                    text-decoration: none;
+                    margin: 0 auto;
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: center;
+
+                    &a:hover {
+                        color: black;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .derechos {
+        grid-area: derechos;
+
+        h6 {
+            font-family: "Arsenal SC", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            text-align: center;
+            font-size: 0.9rem;
+
+        }
+    }
+
+}

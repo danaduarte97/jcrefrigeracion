@@ -1,0 +1,75 @@
+header {
+
+    .franja {
+        p {
+            background-color: #89a5b3;
+            color: white;
+            font-size: 18px;
+            padding: 2px;
+            text-align: center;
+            position: fixed;
+            width: 100vw;
+            height: 27px;
+            top: 0;
+            z-index: 1000;
+            font-family: "Roboto", sans-serif;
+            content: 1784;
+        }
+    }
+
+    .logo-nav {
+        background-color: #fff;
+        border-bottom: 1px solid #ccc;
+        margin-top: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px 0 0;
+
+        .logojc {
+            a {
+                img {
+                    width: 110px;
+                    display: block;
+                    margin-left: 90px;
+                }
+            }
+        }
+
+        .titulo-principal {
+            a {
+                text-decoration: none;
+
+                h1 {
+                    color: $turquesa-puro;
+                    font-size: 15px;
+                    font-family: "Jost", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 700;
+                    font-style: normal;
+                }
+            }
+        }
+
+        
+        .nav {
+            margin-left: auto;
+            justify-content: flex-end;
+
+            ul {
+                li {
+                    a {
+                        color: $turquesa-oscuro;
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        font-family: "Roboto",
+                        sans-serif;
+                        &:hover {
+                            color: black;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+}

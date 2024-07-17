@@ -1,0 +1,20 @@
+.pages-ubicaciones {
+    .tamano-ubicacion {
+        iframe {
+            width: 100vw;
+        }
+    }
+
+    .tamano-ubicacion-texto {
+        p {
+            font-size: 1.8rem;
+            text-align: center;
+            color: $turquesa-puro;
+
+            font-family: "Jost", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+        }
+    }
+}

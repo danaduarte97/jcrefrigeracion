@@ -1,592 +1,482 @@
-@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap");
 @font-face {
-    font-family: "Roboto", sans-serif;
-    src: url(../fonts/LICENSE.txt);
-
+  font-family: "Roboto", sans-serif;
+  src: url(../fonts/LICENSE.txt);
 }
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/*franja superior*/
-
-.franja  p{
-    background-color: #89a5b3;
-    color: white;
-    padding: 2px;
-    text-align: center;
-    position: fixed;
-    /* Fija la franja en la parte superior */
-    width: 100vw;
-    height: 27px;
-    /* Ocupa todo el ancho de la pantalla */
-    top: 0;
-    /* Asegura que está en la parte superior */
-    z-index: 1000;
-    /* Asegura que está por encima de otros elementos */
-    font-family: "Roboto", sans-serif;
-    content: 1784;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: "Roboto" sans-serif;
-    background-image: url(../img/patron1.png);
-    width: 100%;
+  margin: 0;
+  font-family: "Roboto" sans-serif;
+  background-image: url(../img/patron1.png);
+  width: 100%;
 }
 
-.logo-nav {
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
-    margin-top: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+header .franja p {
+  background-color: #89a5b3;
+  color: white;
+  font-size: 18px;
+  padding: 2px;
+  text-align: center;
+  position: fixed;
+  width: 100vw;
+  height: 27px;
+  top: 0;
+  z-index: 1000;
+  font-family: "Roboto", sans-serif;
+  content: 1784;
+}
+header .logo-nav {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 0 0;
+}
+header .logo-nav .logojc a img {
+  width: 110px;
+  display: block;
+  margin-left: 90px;
+}
+header .logo-nav .titulo-principal a {
+  text-decoration: none;
+}
+header .logo-nav .titulo-principal a h1 {
+  color: #104355;
+  font-size: 15px;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+header .logo-nav .nav {
+  margin-left: auto;
+  justify-content: flex-end;
+}
+header .logo-nav .nav ul li a {
+  color: #3c5e6a;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+header .logo-nav .nav ul li a:hover {
+  color: black;
 }
 
-.logojc a img {
-    width: 110px;
-    display: block;
-    margin-left: 90px;
-
+main .img-portada {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+main .img-portada .img-portada-img {
+  width: 700px;
+  height: 120px;
+  opacity: 0.4;
+}
+main .img-portada .img-portada-img:hover {
+  opacity: 1;
+}
+main .img-portada .img-portada-title {
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  position: absolute;
+  color: #104355;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 5px 10px;
+}
+main .banner {
+  width: 100%;
+  height: auto;
+  margin: 15px 0;
+}
+main .subtitulos-index h2 {
+  width: 100%;
+  color: #104355;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: overline;
+}
+main .imagen-muestras-contenedor {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+main .imagen-muestras-contenedor .imagen-muestras {
+  display: flex;
+  flex-wrap: wrap;
+  cursor: zoom-in;
+}
+main .imagen-muestras-contenedor .imagen-muestras .imagen-muestras-item img {
+  border: 1px solid #ffffff;
+  width: 330px;
+  height: auto;
+  margin-top: 20px;
+}
+main .imagen-muestras-contenedor .imagen-muestras .imagen-muestras-item:hover {
+  transform: scale(1.5);
+}
+main .imagen-elegirnos-contenedor {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+main .imagen-elegirnos-contenedor .imagen-elegirnos {
+  display: flex;
+  flex-wrap: nowrap;
+}
+main .imagen-elegirnos-contenedor .imagen-elegirnos .imagen-elegirnos-items {
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .imagen-elegirnos-contenedor .imagen-elegirnos .imagen-elegirnos-items img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+main .imagen-elegirnos-contenedor .imagen-elegirnos .imagen-elegirnos-items h3 {
+  text-align: center;
+  margin: 0;
+  color: #44798c;
+  font-size: 1.4rem;
+}
+main .marcas h4 {
+  color: #104355;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: overline;
+}
+main .marcas img {
+  width: 100%;
 }
 
-.titulo-principal h1 {
-    color: #104355;
-    font-size: 15px;
-    font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-
+.pages-servicios .conteiner-cajas-servicios {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.pages-servicios .conteiner-cajas-servicios .cajas-servicios {
+  width: 420px;
+}
+.pages-servicios .conteiner-cajas-servicios .cajas-servicios img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.pages-servicios .conteiner-cajas-servicios .cajas-servicios .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pages-servicios .conteiner-cajas-servicios .cajas-servicios .card-body h5 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fd850d;
+}
+.pages-servicios .conteiner-cajas-servicios .cajas-servicios .card-body p {
+  flex-grow: 1;
+  line-height: 1.8;
+}
+.pages-servicios .conteiner-cajas-servicios .cajas-servicios .card-body a {
+  font-size: 25px;
+  background-color: #44798c;
+}
+.pages-servicios .conteiner-cajas-servicios .cajas-servicios .card-body a:hover {
+  background-color: #fd850d;
 }
 
-.titulo-principal a {
-    text-decoration: none;
+.pages-ubicaciones .tamano-ubicacion iframe {
+  width: 100vw;
+}
+.pages-ubicaciones .tamano-ubicacion-texto p {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #104355;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
-/*Navegacion*/
-.nav {
-    margin-left: auto;
-    justify-content: flex-end;
+.pages-contacto .contacto-formulario {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-rows: 0.3fr 1.6fr 1.1fr;
+  gap: 0px 17px;
+  grid-auto-flow: row;
+  grid-template-areas: "formulario ." "formulario datos" "formulario .";
 }
-
-.nav li a:hover {
-    color: black;
-
+.pages-contacto .contacto-formulario .formulario {
+  grid-area: formulario;
+  background-color: white;
+  margin: 20px 100px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
 }
-
-.nav li a {
-    color: #3c5e6a;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    
-    font-family: "Roboto", sans-serif;
+.pages-contacto .contacto-formulario .formulario form {
+  display: flex;
+  flex-direction: column;
 }
-
-h1,
-h2,
-h3,
-p {
-    color: #44798c;
-    text-align: center;
+.pages-contacto .contacto-formulario .formulario form label {
+  margin-bottom: 5px;
+  font-weight: bold;
 }
-
-/*Dentro de servicios/consejos/ubicaciones/contacto*/
-.img-portada {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-
+.pages-contacto .contacto-formulario .formulario form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
 }
-
-.img-portada h2 {
-    font-family: "Arsenal SC", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 40px;
+.pages-contacto .contacto-formulario .formulario form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
 }
-
-.img-portada-img {
-    width: 700px;
-    height: 120px;
-    opacity: .4;
+.pages-contacto .contacto-formulario .formulario form .boton {
+  padding: 10px;
+  background-color: #fd850d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
 }
-
-.img-portada-img:hover {
-    opacity: 1;
+.pages-contacto .contacto-formulario .formulario form .boton:hover {
+  background-color: #febd17;
 }
-
-.img-portada-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    padding: 5px 10px;
-    font-size: 30px;
-    text-decoration: none;
-
+.pages-contacto .contacto-formulario .datos {
+  grid-area: datos;
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
 }
-
-/* ------------------Index------------------*/
-
-/*banner del inicio*/
-.banner {
-    width: 100%;
-    height: auto;
-    margin: 15px 0;
+.pages-contacto .contacto-formulario .datos .contact-title {
+  font-weight: bold;
+  color: #5ea4c7;
+  margin-bottom: 5px;
 }
-
-.imagen-muestras-contenedor {
-    margin: 10px auto;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    cursor: zoom-in;
+.pages-contacto .contacto-formulario .datos .contact-phone {
+  color: #1a1a6d;
+  margin-bottom: 20px;
+  text-align: center;
 }
-
-.imagen-muestras {
-    display: flex;
-    flex-wrap: wrap;
+.pages-contacto .contacto-formulario .datos .contact-email {
+  color: #1a1a6d;
+  text-decoration: none;
+  text-align: center;
 }
-
-.imagen-muestras-item img {
-    border: 1px solid #ffffff;
-    width: 330px;
-    height: auto;
-    margin-top: 20px;
-}
-
-.imagen-muestras-item:hover {
-    transform: scale(1.5);
-}
-
-.elegirnos-titulo {
-    width: 100%;
-    color: #44798c;
-    font-size: 25px;
-    text-align: center;
-    text-decoration: overline;
-}
-
-.imagen-elegirnos-contenedor {
-    margin: 10px auto;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 1200px;
-}
-
-.imagen-elegirnos {
-    display: flex;
-    flex-wrap: nowrap;
-
-}
-
-.imagen-elegirnos-items {
-    margin: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-}
-
-.imagen-elegirnos-items img {
-    max-width: 100px;
-    margin-bottom: 10px;
-}
-
-.imagen-elegirnos-items h3 {
-    margin: 0;
-
-}
-
-.marcas img,
-h4 {
-    width: 100%;
-    color: #44798c;
-    font-size: 25px;
-    text-align: center;
-    text-decoration: overline;
-}
-
-/* ------------- Consejos ------------- */
-
-
-
-
-
-
-/* ------------- Servicios ------------- */
-.tamano-acordion {
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 20px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-
-}
-
-.tamano-acordion-titulo {
-    font-size: 30px;
-    font-weight: bold;
-    color: #fd850d;
-}
-
-.card-img-top {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.card-body a {
-    font-size: 25px;
-    background-color: #44798c;
-}
-
-.card-text {
-    flex-grow: 1;
-    line-height: 1.8;
-}
-
-
-
-
-
-
-
-
-/* ------------- Contacto ------------- */
-.formulario-contenedor {
-    background-color: white;
-    margin: 100px;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
-    box-sizing: border-box;
-
-}
-
-.formulario-contenedor form {
-    display: flex;
-    flex-direction: column;
-}
-
-.formulario-contenedor label {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.formulario-contenedor input,
-textarea {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-.boton {
-    padding: 10px;
-    background-color: #fd850d;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.boton:hover {
-    background-color: #febd17;
-}
-
-.contacto-formulario {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    grid-template-rows: 0.3fr 1.6fr 1.1fr;
-    gap: 0px 17px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "formulario ."
-        "formulario datos"
-        "formulario .";
-}
-
-.formulario {
-    grid-area: formulario;
-}
-
-.datos {
-    grid-area: datos;
-}
-
-.datos {
-    max-width: 400px;
-    margin: 60px auto;
-    padding: 50px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-}
-
-.contact-title {
-    font-weight: bold;
-    color: #5ea4c7;
-    margin-bottom: 5px;
-}
-
-.contact-phone {
-    color: #1a1a6d;
-    margin-bottom: 20px;
-}
-
-.contact-email {
-    color: #1a1a6d;
-    text-decoration: none;
-}
-
-.contact-email:hover {
-    text-decoration: underline;
-}
-
-/* ------------- Ubicacion ------------- */
-
-.tamano-ubicacion iframe {
-    width: 100vw;
-}
-
-.tamano-ubicacion-texto {
-    font-size: 1.8rem;
-}
-
-
-/* ------------- Footer -------------  */
-.footer {
-    background-color: rgb(199, 194, 194);
-    width: 100%;
-    margin: 0 auto;
-}
-
-footer {
-    padding: 20px;
-    margin-top: 10px;
+.pages-contacto .contacto-formulario .datos .contact-email:hover {
+  text-decoration: underline;
 }
 
 .footer-contenedor {
-    display: grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.6fr 0.2fr;
+  gap: 0px 18px;
+  grid-auto-flow: row;
+  grid-template-areas: "mpago contacto nav-footer" "derechos derechos derechos";
+  align-items: center;
+  background-color: rgb(199, 194, 194);
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.footer-contenedor .mpago {
+  grid-area: mpago;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-contenedor .mpago img {
+  width: 300px;
+}
+.footer-contenedor .contacto {
+  grid-area: contacto;
+}
+.footer-contenedor .contacto h5 {
+  font-size: 1rem;
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+.footer-contenedor .nav-footer {
+  grid-area: nav-footer;
+}
+.footer-contenedor .nav-footer ul li {
+  list-style-type: none;
+}
+.footer-contenedor .nav-footer ul li a {
+  color: #3c5e6a;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  margin: 0 auto;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.footer-contenedor .nav-footer ul li aa:hover {
+  color: black;
+}
+.footer-contenedor .derechos {
+  grid-area: derechos;
+}
+.footer-contenedor .derechos h6 {
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 660px) and (max-width: 992px) {
+  header .logo-nav {
+    display: flex;
+  }
+  header .logo-nav .logojc {
+    margin-right: 5px;
+  }
+  header .logo-nav .logojc img {
+    margin-left: 30px;
+  }
+  header .logo-nav .titulo-principal {
+    flex: 2;
+  }
+  header .logo-nav .nav {
+    flex-wrap: wrap;
+  }
+  header .logo-nav .nav .navbar-nav {
+    flex-direction: row;
+  }
+  header .logo-nav .nav .navbar-nav .nav-item {
+    margin-right: 10px;
+  }
+  header .logo-nav .nav .navbar-nav .nav-item .nav-link {
+    padding: 5px 10px;
+  }
+  main .imagen-muestras-contenedor .imagen-muestras {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main .imagen-elegirnos-contenedor .imagen-elegirnos .imagen-elegirnos-items {
+    padding: 5px;
+  }
+  main .imagen-elegirnos-contenedor .imagen-elegirnos .imagen-elegirnos-items img {
+    max-width: 80px;
+    margin-bottom: 10px;
+  }
+  main .imagen-elegirnos-contenedor .imagen-elegirnos .imagen-elegirnos-items h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  main .marcas h4 {
+    font-size: 18px;
+  }
+  .footer-contenedor {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1.6fr 0.2fr;
-    gap: 0px 18px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "mpago contacto nav-footer"
-        "derechos derechos derechos";
-
-    background-color: #e2dfdf;
+    grid-template-rows: 1.2fr 1.4fr 0.3fr;
+    gap: 0px 0px;
+    grid-template-areas: "mpago contacto contacto" "nav-footer nav-footer nav-footer" "derechos derechos derechos";
+  }
+  .footer-contenedor .mpago img {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 659px) {
+  header .franja p {
+    font-size: 14px;
+  }
+  header .logo-nav .container-fluid {
+    flex-direction: column;
     align-items: center;
-}
-
-.mpago {
-    grid-area: mpago;
-}
-
-.mpago {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.mpago img {
-    width: 300px;
-}
-
-.contacto {
-    grid-area: contacto;
-}
-
-.contacto h5 {
-    font-size: 1rem;
-    font-family: "Arsenal SC", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-}
-
-.nav-footer {
-    grid-area: nav-footer;
-}
-
-.nav-footer li {
-    list-style-type: none;
-}
-
-.nav-footer a {
-    color: #3c5e6a;
-    font-family: "Roboto", sans-serif;
-    text-decoration: none;
+  }
+  header .logo-nav .container-fluid .logojc {
     margin: 0 auto;
-    font-weight: bold;
-    display: flex;
-    justify-content: center
-}
-
-.nav-footer a:hover {
-    color: black;
-}
-
-.derechos {
-    grid-area: derechos;
-}
-
-.derechos h6 {
-    font-family: "Arsenal SC", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
-    font-size: 0.9rem;
-    
-}
-
-@media screen and (min-width:660px) and (max-width:992px) {
-/* nav */
-    .logojc, .titulo-principal {
-        display: flex;
-        
-    }
-    .navbar-brand.logojc img {
-        margin-left: 30px;
-        
-    }
-    .navbar-brand.logojc {
-        margin-right: 5px;
-    }
-
-    .titulo-principal {
-        flex: 2;
-    }
-/*ubica los links debajo y uno al lado del otro*/
-  .nav {
-        flex-wrap: wrap; 
-    }
-
-    .navbar-nav {
-        flex-direction: row; 
-    }
-
-    .nav-item {
-        margin-right: 10px; 
-    }
-
-    .nav-link {
-        padding: 5px 10px; 
-    } 
-   
-   /*INDEX*/
-    .imagen-muestras {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .imagen-elegirnos-items {
-        padding: 0px;
-    }
-    
-    .imagen-elegirnos-items img {
-        max-width: 80px;
-        margin-bottom: 10px;
-    }
-    
-    .imagen-elegirnos-items h3 {
-        margin: 0;
-        font-size: 20px;
-    
-    }
-
-    .marcas h4 {
-        font-size: 18px;
-    }
-
-     /*footer*/
-    .footer-contenedor {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1.2fr 1.4fr 0.3fr;
-        gap: 0px 0px;
-    
-        grid-template-areas:
-            "mpago contacto contacto"
-            "nav-footer nav-footer nav-footer"
-            "derechos derechos derechos";
-    }
-    .mpago img {
-        width: 250px;
-}
-}
-
-@media screen and (max-width:659px){
-
-
-/*INDEX*/
-.elegirnos-titulo {
-    font-size: 19px;
-}
-.imagen-elegirnos-items {
+  }
+  header .logo-nav .container-fluid .logojc a img {
+    margin: 0 auto;
+  }
+  header .logo-nav .titulo-principal {
+    display: none;
+  }
+  header .logo-nav .navbar-toggler {
+    position: absolute;
+    right: 10px;
+    top: 50px;
+  }
+  header .logo-nav .nav {
+    margin-left: initial;
+  }
+  header .logo-nav .nav .navbar-nav {
+    align-items: center;
+  }
+  main .subtitulos-index h2 {
+    font-size: 20px;
+  }
+  main .imagen-muestras-contenedor .imagen-muestras {
+    justify-content: center;
+  }
+  main .imagen-muestras-contenedor .imagen-muestras .imagen-muestras-item {
+    margin: 5px;
+  }
+  main .imagen-muestras-contenedor .imagen-muestras .imagen-muestras-item img {
+    margin: 0;
+    width: 200px;
+  }
+  main .imagen-elegirnos-contenedor .imagen-elegirnos .imagen-elegirnos-items {
     margin: 1px;
     padding: 3px;
-}
-.imagen-elegirnos-items img {
-    max-width: 40px;
+  }
+  main .imagen-elegirnos-contenedor .imagen-elegirnos .imagen-elegirnos-items img {
+    max-width: 60px;
     margin-bottom: 2px;
-}
-
-.imagen-elegirnos-items h3 {
+  }
+  main .imagen-elegirnos-contenedor .imagen-elegirnos .imagen-elegirnos-items h3 {
     margin: 0;
-    font-size: 9px;
-
-}
-
-.marcas h4 {
+    font-size: 12px;
+  }
+  main .marcas h4 {
     font-size: 18px;
-}
-     /*footer*/
-     .footer-contenedor {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 0.9fr 0.2fr;
-        gap: 0px 0px;
-    
-        grid-template-areas:
-            "mpago"
-            "contacto"
-            "nav-footer"
-            "derechos";
-    }
-    .mpago img {
-        width: 150px;
-}
-    footer {
-        padding: 0px;
-    }
-    
+  }
+  .footer-contenedor {
+    padding: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.9fr 0.2fr;
+    gap: 0px 0px;
+    grid-template-areas: "mpago" "contacto" "nav-footer" "derechos";
+  }
+  .footer-contenedor .mpago img {
+    width: 150px;
+  }
 }
 
-@media screen and (max-width:480px) {
-
-}
+/*# sourceMappingURL=estilo.css.map */
