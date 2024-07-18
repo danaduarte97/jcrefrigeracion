@@ -120,3 +120,109 @@ main {
         }
     }
 }
+
+@media screen and (min-width:660px) and (max-width:992px) {
+    main {
+        .img-portada {
+            margin-bottom: 10px;
+            
+            .img-portada-img {
+                height: 100px;  
+            }
+            .img-portada-title {
+                font-size: 30px;
+            }
+        }
+        .imagen-muestras-contenedor {
+            .imagen-muestras {
+                flex-wrap: wrap;
+                justify-content: center;
+
+            }
+        }
+
+        .imagen-elegirnos-contenedor {
+            .imagen-elegirnos {
+                .imagen-elegirnos-items {
+                    padding: 5px;
+
+                    img {
+                        max-width: 80px;
+                        margin-bottom: 10px;
+                    }
+
+                    h3 {
+                        margin: 0;
+                        font-size: 20px;
+
+                    }
+                }
+            }
+        }
+
+        .marcas {
+            h4 {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:659px) {
+    main {
+        .img-portada {
+            .img-portada-img {
+                height: 100px;  
+            }
+            .img-portada-title {
+                font-size: 26px;
+            }
+        }
+        .subtitulos-index {
+            h2 {
+                font-size: 20px;
+            }
+        }
+
+        .imagen-muestras-contenedor {
+            .imagen-muestras {
+                justify-content: center;
+
+                .imagen-muestras-item {
+                    margin: 5px;
+
+                    img {
+                        margin: 0;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+        .imagen-elegirnos-contenedor {
+            .imagen-elegirnos {
+                .imagen-elegirnos-items {
+                    margin: 1px;
+                    padding: 3px;
+
+                    img {
+                        max-width: 60px;
+                        margin-bottom: 2px;
+                    }
+
+                    h3 {
+                        margin: 0;
+                        font-size: 12px;
+
+                    }
+                }
+            }
+        }
+
+        .marcas {
+            h4 {
+                font-size: 18px;
+            }
+        }
+    }
+
+}

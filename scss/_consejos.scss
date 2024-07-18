@@ -1,0 +1,130 @@
+.pages-consejos {
+    .consejos-ahorrar {
+        margin: 5px;
+
+        .consejos-ahorrar-item {
+            img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .shorts-ahorro-contenedor {
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 6px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "shorts1 shorts2 shorts3 shorts4";
+
+        .shorts1 {
+            grid-area: shorts1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .shorts2 {
+            grid-area: shorts2;
+            display: flex;
+            justify-content: center;
+        }
+
+        .shorts3 {
+            grid-area: shorts3;
+            display: flex;
+            justify-content: center;
+        }
+
+        .shorts4 {
+            grid-area: shorts4;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+}
+
+@media screen and (min-width:660px) and (max-width:992px) {
+    .pages-consejos {
+        .shorts-ahorro-contenedor {
+
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 7px 6px;
+            grid-template-areas:
+                "shorts1 shorts2"
+                "shorts3 shorts4";
+
+            .shorts1 {
+                iframe {
+                    width: 100%;
+                }
+            }
+
+            .shorts2 {
+                iframe {
+                    width: 100%;
+                }
+            }
+
+            .shorts3 {
+                iframe {
+                    width: 100%;
+                }
+            }
+
+            .shorts4 {
+                iframe {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:659px) {
+    .pages-consejos {
+        .shorts-ahorro-contenedor {
+
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 3px 3px;
+            grid-template-areas:
+                "shorts1 shorts2"
+                "shorts3 shorts4";
+
+            .shorts1 {
+                iframe {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .shorts2 {
+                iframe {
+                    width: 100%;
+                    height: 290px;
+                }
+            }
+
+            .shorts3 {
+                iframe {
+                    width: 100%;
+                    height: 290px;
+                }
+            }
+
+            .shorts4 {
+                iframe {
+                    width: 100%;
+                    height: 290px;
+                }
+            }
+
+        }
+    }
+}

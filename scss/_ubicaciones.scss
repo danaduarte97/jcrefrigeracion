@@ -6,15 +6,52 @@
     }
 
     .tamano-ubicacion-texto {
+        margin: 0 10px;
+
         p {
             font-size: 1.8rem;
             text-align: center;
             color: $turquesa-puro;
-
             font-family: "Jost", sans-serif;
             font-optical-sizing: auto;
             font-weight: 700;
             font-style: normal;
         }
     }
+
+    .tamano-ubicacion-zonas {
+        margin: 0 10px;
+        color: black;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:660px) and (max-width:992px) {
+    .pages-ubicaciones {
+        .tamano-ubicacion-texto {
+            p {
+                font-size: 1.5rem;
+            }
+        }
+
+        .tamano-ubicacion-zonas {
+            font-size: 14px;
+        }
+    }
+
+}
+
+@media screen and (max-width:659px) {
+    .pages-ubicaciones {
+        .tamano-ubicacion-texto {
+            p {
+                font-size: 1.3rem;
+            }
+        }
+
+        .tamano-ubicacion-zonas {
+            font-size: 13px;
+        }
+    }
+
 }

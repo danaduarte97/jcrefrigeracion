@@ -42,6 +42,7 @@
         grid-area: nav-footer;
 
         ul {
+            padding-left: 0;
             li {
                 list-style-type: none;
 
@@ -77,3 +78,48 @@
     }
 
 }
+
+@media screen and (min-width:660px) and (max-width:992px) {
+    .footer-contenedor {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1.2fr 1.4fr 0.3fr;
+        gap: 0px 0px;
+
+        grid-template-areas:
+            "mpago contacto contacto"
+            "nav-footer nav-footer nav-footer"
+            "derechos derechos derechos";
+
+        .mpago {
+            img {
+                width: 250px;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width:659px) {
+    .footer-contenedor {
+        padding: 0px;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.9fr 0.2fr;
+        gap: 0px 0px;
+
+        grid-template-areas:
+            "mpago"
+            "contacto"
+            "nav-footer"
+            "derechos";
+
+        .mpago {
+            img {
+                width: 150px;
+            }
+        }
+       
+    }
+
+}
+
