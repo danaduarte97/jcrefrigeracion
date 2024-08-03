@@ -185,8 +185,9 @@ main .imagen-muestras-contenedor .imagen-muestras .imagen-muestras-item img {
   width: 330px;
   height: auto;
   margin-top: 20px;
+  transition: all 2s;
 }
-main .imagen-muestras-contenedor .imagen-muestras .imagen-muestras-item:hover {
+main .imagen-muestras-contenedor .imagen-muestras .imagen-muestras-item img:hover {
   transform: scale(1.5);
 }
 main .imagen-elegirnos-contenedor {
@@ -576,6 +577,41 @@ main .marcas img {
   text-decoration: underline;
 }
 
+@media screen and (min-width: 660px) and (max-width: 992px) {
+  .pages-contacto .contacto-formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: "formulario" "formulario" "formulario";
+    justify-items: center;
+  }
+  .pages-contacto .contacto-formulario .datos {
+    display: none;
+  }
+}
+@media screen and (max-width: 659px) {
+  .pages-contacto .contacto-formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: "formulario" "formulario" "formulario";
+    justify-items: center;
+  }
+  .pages-contacto .contacto-formulario .formulario {
+    max-width: 400px;
+  }
+  .pages-contacto .contacto-formulario .datos {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pages-contacto .contacto-formulario {
+    justify-content: center;
+  }
+  .pages-contacto .contacto-formulario .formulario {
+    max-width: 350px;
+  }
+}
 .footer-contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -599,6 +635,14 @@ main .marcas img {
 }
 .footer-contenedor .contacto {
   grid-area: contacto;
+  text-align: center;
+}
+.footer-contenedor .contacto a img {
+  width: 25px;
+  transition: transform 0.3s;
+}
+.footer-contenedor .contacto a img:hover {
+  transform: scale(1.2);
 }
 .footer-contenedor .contacto h5 {
   font-size: 1rem;
@@ -625,7 +669,7 @@ main .marcas img {
   display: flex;
   justify-content: center;
 }
-.footer-contenedor .nav-footer ul li aa:hover {
+.footer-contenedor .nav-footer ul li a:hover {
   color: black;
 }
 .footer-contenedor .derechos {

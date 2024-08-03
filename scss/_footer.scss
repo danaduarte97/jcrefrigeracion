@@ -28,6 +28,16 @@
 
     .contacto {
         grid-area: contacto;
+        text-align: center;
+        a{
+            img{
+                width: 25px;
+                transition: transform 0.3s;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            } 
+        }
 
         h5 {
             font-size: 1rem;
@@ -55,7 +65,7 @@
                     display: flex;
                     justify-content: center;
 
-                    &a:hover {
+                    &:hover {
                         color: black;
                     }
 

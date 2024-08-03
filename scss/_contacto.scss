@@ -97,3 +97,57 @@
     }
 }
 
+@media screen and (min-width:660px) and (max-width:992px) {
+    .pages-contacto {
+        .contacto-formulario {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "formulario"
+                "formulario"
+                "formulario";
+            justify-items: center;
+
+            .datos {
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 659px) {
+    .pages-contacto {
+        .contacto-formulario {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "formulario"
+                "formulario"
+                "formulario";
+            justify-items: center;
+
+            .formulario {
+                max-width: 400px;
+            }
+
+            .datos {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pages-contacto {
+        .contacto-formulario {
+            justify-content: center;
+
+            .formulario {
+                max-width: 350px;
+            }
+        }
+    }
+}

@@ -65,11 +65,14 @@ main {
                     width: 330px;
                     height: auto;
                     margin-top: 20px;
+                    transition: all 2s;
+
+                    &:hover {
+                        transform: scale(1.5);
+                    }
+
                 }
 
-                &:hover {
-                    transform: scale(1.5);
-                }
             }
         }
     }
@@ -125,14 +128,16 @@ main {
     main {
         .img-portada {
             margin-bottom: 10px;
-            
+
             .img-portada-img {
-                height: 100px;  
+                height: 100px;
             }
+
             .img-portada-title {
                 font-size: 30px;
             }
         }
+
         .imagen-muestras-contenedor {
             .imagen-muestras {
                 flex-wrap: wrap;
@@ -172,12 +177,14 @@ main {
     main {
         .img-portada {
             .img-portada-img {
-                height: 100px;  
+                height: 100px;
             }
+
             .img-portada-title {
                 font-size: 26px;
             }
         }
+
         .subtitulos-index {
             h2 {
                 font-size: 20px;
@@ -198,6 +205,7 @@ main {
                 }
             }
         }
+
         .imagen-elegirnos-contenedor {
             .imagen-elegirnos {
                 .imagen-elegirnos-items {
