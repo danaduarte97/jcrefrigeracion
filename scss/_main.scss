@@ -1,4 +1,22 @@
 main {
+    .whatsapp-link-contenedor {
+        .whatsapp-link {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 1000;
+
+            .whatsapp-icon {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+
+                &:hover{ transform: scale(1.1);}
+            }
+        }
+    }
+
     .img-portada {
         position: relative;
         width: 100%;
@@ -126,6 +144,14 @@ main {
 
 @media screen and (min-width:660px) and (max-width:992px) {
     main {
+        .whatsapp-link-contenedor {
+            .whatsapp-link {
+                .whatsapp-icon {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
         .img-portada {
             margin-bottom: 10px;
 
@@ -175,6 +201,14 @@ main {
 
 @media screen and (max-width:659px) {
     main {
+        .whatsapp-link-contenedor {
+            .whatsapp-link {
+                .whatsapp-icon {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
         .img-portada {
             .img-portada-img {
                 height: 100px;
@@ -229,6 +263,44 @@ main {
         .marcas {
             h4 {
                 font-size: 18px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:419px) {
+    main {
+        .whatsapp-link-contenedor {
+            .whatsapp-link {
+                .whatsapp-icon {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        .subtitulos-index {
+            h2 {
+                display: none;
+            }
+        }
+
+        .imagen-elegirnos-contenedor {
+            .imagen-elegirnos {
+                .imagen-elegirnos-items {
+                    img {
+                        max-width: 50px;
+                    }
+                    h3 {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+
+        .marcas {
+            h4 {
+                font-size: 12px;
             }
         }
     }
