@@ -322,10 +322,6 @@ main .marcas img {
   }
 }
 @media screen and (max-width: 419px) {
-  main .whatsapp-link-contenedor .whatsapp-link .whatsapp-icon {
-    width: 30px;
-    height: 30px;
-  }
   main .subtitulos-index h2 {
     display: none;
   }
